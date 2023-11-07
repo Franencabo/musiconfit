@@ -3,7 +3,7 @@
         "id": "1",
         "title": "Dance 4",
         "color": "fucsia",
-        "cover": "../../../public/covers/DANCE4.jpeg",
+        "cover": "../../../covers/DANCE4.jpeg",
         "tracks": [
             {
                 "id": "1",
@@ -67,43 +67,48 @@
         "id": "2",
         "title": "Dance 5",
         "color": "blue",
-        "cover": "../../../public/covers/DANCE5.jpeg",
+        "cover": "../../../covers/DANCE5.jpeg",
         "tracks": [],
-        "category": "","description": "La mejor música del momento"
+        "category": "",
+        "description": "La mejor música del momento"
     },
     {
         "id": "3",
         "title": "Dance 6",
         "color": "blue",
-        "cover": "../../../public/covers/DANCE6.jpeg",
+        "cover": "../../../covers/DANCE6.jpeg",
         "tracks": [],
-        "category": "","description": "La mejor música del momento"
+        "category": "",
+        "description": "La mejor música del momento"
     },
     {
         "id": "4",
         "title": "Dance 7",
         "color": "brown",
-        "cover": "../../../public/covers/DANCE7.jpeg",
+        "cover": "../../../covers/DANCE7.jpeg",
         "tracks": [],
-        "category": "","description": "La mejor música del momento"
+        "category": "",
+        "description": "La mejor música del momento"
     },
     {
         "id": "5",
         "title": "Latino Mix 4",
         "color": "red",
-        "cover": "../../../public/covers/LATINO4.jpeg",
+        "cover": "../../../covers/LATINO4.jpeg",
         "tracks": [],
-        "category": "Latino","description": "La mejor música del momento"
+        "category": "Latino",
+        "description": "La mejor música del momento"
     },
     {
         "id": "6",
         "title": "Rihanna Mix",
         "color": "red",
-        "cover": "../../../public/covers/Rihanna-cover.jpeg",
+        "cover": "../../../covers/Rihanna-cover.jpeg",
         "tracks": [],
         "category": [
             "Exclusive",
             "Evergreen"
-        ],"description": "La mejor música del momento"
+        ],
+        "description": "La mejor música del momento"
     }
 ]

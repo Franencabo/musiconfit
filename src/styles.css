@@ -111,8 +111,9 @@ html {
   background: linear-gradient(90deg, #1499B6 0%,  #FE00E5 100%);
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 10px;
 }
 
 .footer-button{

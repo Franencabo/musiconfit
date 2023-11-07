@@ -16,7 +16,7 @@ export const Player = () => {
     const audioRef = useRef();
 
     useEffect(() => {
-        audioRef.current.src = '../../../public/music/DANCE7.mp3'
+        audioRef.current.src = '../../../music/DANCE7.mp3'
     }, [])
 
 
