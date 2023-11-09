@@ -1,15 +1,10 @@
-
- 
 html {
-  font-family:  system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   background-color: #000;
   color: white;
 }
-
-
-
 
 #root {
   display: grid;
@@ -23,92 +18,88 @@ html {
   height: 100vh;
 }
 
-.aside-menu{
+.aside-menu {
   grid-area: aside;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
-.user-controls{
+.user-controls {
   min-height: 350px;
   margin-bottom: 20px;
 }
 
-.recent-items{
+.recent-items {
   flex-grow: 1;
 }
 
 .main {
   grid-area: main;
   display: flex;
-  flex-direction: column
- 
+  flex-direction: column;
 }
 
-.nav-bar{
+.nav-bar {
   min-height: 100px;
 }
 
-.grid-card-list{
-  background: linear-gradient(180deg, #292929 0%, #121212 100% );
+.grid-card-list {
+  background: linear-gradient(180deg, #292929 0%, #121212 100%);
   flex-grow: 1;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 60px;
   padding: 40px 60px;
 }
 
-.rounded-section{
+.rounded-section {
   border-radius: 20px;
   background-color: #121212;
 }
 
-
-
-.card{
- background-color: #181818;
- display: flex;
- justify-content: center;
- align-items: center;
- padding: 15px;
- border-radius: 5px;
+.card {
+  position: relative;
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
 }
 
+.card:hover {
+  background-color: #292929;
+}
 
-
-.card-image{
+.card-image {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
-.card-title{
+.card-title {
   font-size: 14;
   font-weight: 600;
   text-transform: uppercase;
-
 }
 
 .card-description {
   font-size: 12;
   font-weight: 400;
-
 }
 
-.card-link{
-  text-decoration: none; 
+.card-link {
+  text-decoration: none;
   color: white;
 }
 
-
-.footer{
+.footer {
   grid-area: player;
   min-height: 100px;
   position: fixed;
   left: 0;
   bottom: 0;
-  background: linear-gradient(90deg, #1499B6 0%,  #FE00E5 100%);
+  background: linear-gradient(90deg, #1499b6 0%, #fe00e5 100%);
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -116,13 +107,12 @@ html {
   padding: 10px;
 }
 
-.footer-button{
+.footer-button {
   background-color: white;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   border: none;
-
 }
 
 .player-icon,
@@ -132,5 +122,26 @@ html {
   height: 20px;
 }
 
+.card-play-button {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-80%, 100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
 
+.card:hover .card-play-button {
+  background-color: #fe00e5;
+
+  transform: translate(-80%, 0);
+  opacity: 1;
+}

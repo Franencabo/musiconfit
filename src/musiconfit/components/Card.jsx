@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import { CardPlayButton } from "./CardPlayButton";
+
 
 export const Card = ({ playlist }) => {
     const { title, cover, description } = playlist;
@@ -15,9 +17,9 @@ export const Card = ({ playlist }) => {
                     <p className="card-description">{description}</p>
                 </div>
 
+                <CardPlayButton id={playlist.id} />
+
             </a>
-
-
         </div>
     )
 }
