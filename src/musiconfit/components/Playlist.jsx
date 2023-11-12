@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
+import { Song } from "./Song";
 
 
 export const Playlist = ({ playlist }) => {
@@ -8,15 +9,28 @@ export const Playlist = ({ playlist }) => {
 
     const playlistSelected = playlist.find(playlist => playlist.id === id);
 
-    const { title, banner } = playlistSelected;
+    const { title, banner, tracks } = playlistSelected;
 
     return (
-        <div>
+        <main className="main rounded-section">
             <picture className="banner">
-                <img src={banner} alt="" />
+                <img className="banner-img" src={banner} alt="" />
+                <div className="overlay"></div>
             </picture>
-            <h2>{title}</h2>
-        </div>
+
+            <div className="playlist-dashboard">
+                <div className="playlist-table">
+                    <p className="playlist-title"># {title}
+                        <i className=""></i>
+                    </p>
+                    {tracks.map((track, index) => {
+
+                        return <Song key={index} track={track} index={index} />
+                    })}
+                </div>
+                <div className="pitch-control"></div>
+            </div>
+        </main>
     );
 };
 

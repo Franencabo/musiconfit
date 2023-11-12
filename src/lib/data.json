@@ -105,11 +105,88 @@
         "color": "red",
         "cover": "../../../covers/Rihanna-cover.jpeg",
         "banner": "../../../banners/Rihanna-Banner.jpeg",
-        "tracks": [],
-        "category": [
-            "Exclusive",
-            "Evergreen"
-        ],
-        "description": "La mejor música del momento"
+        "src": "../../../music/RihannaMix.mp3",
+        "tracks": [
+            {
+                "title": "Bitch Better Have My Money",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Wild Thoughts",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Umbrella",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "S&M",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Pon de Replay",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Disturbia",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Don't stop the music",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Where have you been",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Only girl",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Can't remember to forget you",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Work",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "You Da One",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Rude Boy",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Kiss it better",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "We found love",
+                "artist": "",
+                "timeToStart": 0
+            },
+            {
+                "title": "Rigth now",
+                "artist": "",
+                "timeToStart": 0
+            }
+        ]
     }
 ]
