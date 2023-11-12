@@ -104,6 +104,7 @@
         "title": "Rihanna Mix",
         "color": "red",
         "cover": "../../../covers/Rihanna-cover.jpeg",
+        "banner": "../../../banners/Rihanna-Banner.jpeg",
         "tracks": [],
         "category": [
             "Exclusive",

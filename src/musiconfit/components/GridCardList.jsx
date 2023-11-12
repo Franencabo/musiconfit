@@ -11,12 +11,7 @@ export const GridCardList = () => {
             {playlistArray.map((item, index) => {
                 return <Card playlist={item} key={index} />
             })}
-            {playlistArray.map((item, index) => {
-                return <Card playlist={item} key={index} />
-            })}
-            {playlistArray.map((item, index) => {
-                return <Card playlist={item} key={index} />
-            })}
+
         </div>
     )
 }

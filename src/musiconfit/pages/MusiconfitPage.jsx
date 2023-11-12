@@ -1,9 +1,9 @@
-import { MusiconfiLayout } from "../layout/MusiconfiLayout"
+import { MusiconfitLayout } from "../layout/MusiconfitLayout"
 
 
 export const MusiconfitPage = () => {
     return (
 
-        <MusiconfiLayout />
+        <MusiconfitLayout />
     )
 }

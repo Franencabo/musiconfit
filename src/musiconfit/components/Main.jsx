@@ -1,5 +1,6 @@
-import { GridCardList } from "./GridCardList"
+
 import { NavBar } from "./NavBar"
+import { MusiconfitRoutes } from "../routes/MusiconfitRoutes"
 
 
 export const Main = () => {
@@ -7,7 +8,7 @@ export const Main = () => {
         <main className="main rounded-section">
 
             <NavBar />
-            <GridCardList />
+            <MusiconfitRoutes />
         </main>
     )
 }

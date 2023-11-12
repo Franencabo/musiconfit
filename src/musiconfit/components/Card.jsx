@@ -1,13 +1,14 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import { CardPlayButton } from "./CardPlayButton";
 
 
 export const Card = ({ playlist }) => {
-    const { title, cover, description } = playlist;
+    const { id, title, cover, description } = playlist;
 
     return (
         <div className="card">
-            <a className="card-link" href="">
+            <Link to={`/playlist/${id}`} className="card-link">
                 <picture className="card-picture">
                     <img className="card-image" src={cover} alt={title} />
                 </picture>
@@ -17,9 +18,10 @@ export const Card = ({ playlist }) => {
                     <p className="card-description">{description}</p>
                 </div>
 
-                <CardPlayButton id={playlist.id} />
+                <CardPlayButton id={id} />
 
-            </a>
+
+            </Link>
         </div>
     )
 }

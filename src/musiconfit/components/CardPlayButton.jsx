@@ -24,6 +24,7 @@ export const CardPlayButton = ({ id }) => {
                 const { songs, playlist } = data
                 setIsPlaying(true)
                 setCurrentMusic({ songs, playlist, song: songs[0] })
+                console.log("he hecho el fetch")
             })
     }
 

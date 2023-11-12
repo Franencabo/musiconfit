@@ -1,7 +1,10 @@
+import { PlaylistLayout } from "../layout/PlaylistLayout";
 
 
-export const PLaylistPage = () => {
+export const PlaylistPage = () => {
+
     return (
-        <div>PLaylistPage</div>
+
+        <PlaylistLayout />
     )
-}
+};
