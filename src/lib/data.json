@@ -104,88 +104,105 @@
         "title": "Rihanna Mix",
         "color": "red",
         "cover": "../../../covers/Rihanna-cover.jpeg",
+        "duration": 3406,
         "banner": "../../../banners/Rihanna-Banner.jpeg",
         "src": "../../../music/RihannaMix.mp3",
         "tracks": [
             {
+                "id": 1,
                 "title": "Bitch Better Have My Money",
                 "artist": "",
                 "timeToStart": 0
             },
             {
+                "id": 2,
                 "title": "Wild Thoughts",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 153
             },
             {
+                "id": 3,
                 "title": "Umbrella",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 335
             },
             {
+                "id": 4,
                 "title": "S&M",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 532
             },
             {
+                "id": 5,
                 "title": "Pon de Replay",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 770
             },
             {
+                "id": 6,
                 "title": "Disturbia",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 967
             },
             {
+                "id": 7,
                 "title": "Don't stop the music",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 1248
             },
             {
+                "id": 8,
                 "title": "Where have you been",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 1474
             },
             {
+                "id": 9,
                 "title": "Only girl",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 1725
             },
             {
+                "id": 10,
                 "title": "Can't remember to forget you",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 2050
             },
             {
+                "id": 11,
                 "title": "Work",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 2284
             },
             {
+                "id": 12,
                 "title": "You Da One",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 2435
             },
             {
+                "id": 13,
                 "title": "Rude Boy",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 2628
             },
             {
+                "id": 14,
                 "title": "Kiss it better",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 2751
             },
             {
+                "id": 15,
                 "title": "We found love",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 2971
             },
             {
+                "id": 16,
                 "title": "Rigth now",
                 "artist": "",
-                "timeToStart": 0
+                "timeToStart": 3122000
             }
         ]
     }

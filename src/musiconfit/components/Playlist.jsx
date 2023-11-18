@@ -3,13 +3,17 @@ import { useParams } from "react-router-dom";
 import { Song } from "./Song";
 
 
+
 export const Playlist = ({ playlist }) => {
 
     const { id } = useParams();
 
     const playlistSelected = playlist.find(playlist => playlist.id === id);
 
-    const { title, banner, tracks } = playlistSelected;
+
+    const { title, banner, tracks, duration, src } = playlistSelected;
+
+
 
     return (
         <main className="main rounded-section">
@@ -25,7 +29,9 @@ export const Playlist = ({ playlist }) => {
                     </p>
                     {tracks.map((track, index) => {
 
-                        return <Song key={index} track={track} index={index} />
+                        const nextTrack = tracks[index + 1];
+
+                        return <Song key={index} track={track} nextTrack={nextTrack} duration={duration} src={src} />
                     })}
                 </div>
                 <div className="pitch-control"></div>
