@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
-import { Pause, Play } from './Player';
+import { Play } from './icons/Play';
+import { Pause } from './icons/Pause';
 
 import { userPlayerStore } from '../store/playerStore';
 

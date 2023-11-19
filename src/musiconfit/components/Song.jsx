@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import { useTimeConverter } from '../hooks/useTimeConverter';
-import { useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { userPlayerStore } from '../store/playerStore';
 
 export const Song = ({ track, nextTrack, duration, src }) => {
     const { currentMusic, setCurrentMusic, isPlaying, setIsPlaying } = userPlayerStore(state => state);
+    const [isCurrentPlaying, setIsCurrentPlaying] = useState(false);
 
     const trackDuration = nextTrack
         ? (nextTrack.timeToStart - track.timeToStart)
@@ -19,8 +20,10 @@ export const Song = ({ track, nextTrack, duration, src }) => {
             audioRef.current.currentTime = track.timeToStart;
             audioRef.current.src = src;
             audioRef.current.play();
+            setIsCurrentPlaying(true);
         } else if (currentMusic.song !== track) {
             audioRef.current.pause();
+            setIsCurrentPlaying(false);
         }
     }, [currentMusic, isPlaying, track, src]);
 
@@ -30,6 +33,7 @@ export const Song = ({ track, nextTrack, duration, src }) => {
         if (currentMusic.song === track) {
             audioRef.current.pause();
             setIsPlaying(false);
+            setIsCurrentPlaying(false);
             return;
         }
         audioRef.current.currentTime = track.timeToStart;
@@ -37,14 +41,15 @@ export const Song = ({ track, nextTrack, duration, src }) => {
         audioRef.current.play();
 
         setIsPlaying(true);
+        setIsCurrentPlaying(true);
 
         setCurrentMusic({ ...currentMusic, song: track });
     }
 
-
+    const songStatus = `song ${isCurrentPlaying ? 'is-playing' : ''}`;
 
     return (
-        <div className="song" onClick={handleClick}>
+        <div className={songStatus} onClick={handleClick}>
             <span className="song-number">{track.id}</span>
             <p className="song-title">{track.title}</p>
             <p className="song-duration">{minutes}:{seconds}</p>
