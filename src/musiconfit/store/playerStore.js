@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-export const userPlayerStore = create((set) => ({
+export const usePlayerStore = create((set) => ({
   isPlaying: false,
   currentMusic: {
     playlist: null,

@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
 import { useTimeConverter } from '../hooks/useTimeConverter';
-
-import { useAudioPlayer } from '../hooks/useAudioPlayer';
-import { useState } from 'react';
+import { usePlayerStore } from '../store/playerStore';
+import { useEffect, useRef, useState } from 'react';
 
 
 export const Song = ({ track, nextTrack, duration, src }) => {
-    const { audioRef,
-        togglePlay,
-        isPlaying } = useAudioPlayer();
+    const { currentMusic, setCurrentMusic, isPlaying, setIsPlaying } = usePlayerStore(state => state);
 
     const [isCurrentPlaying, setIsCurrentPlaying] = useState(false);
+
+    const audioRef = useRef();
+
 
     const trackDuration = nextTrack
         ? (nextTrack.timeToStart - track.timeToStart)
@@ -18,18 +18,35 @@ export const Song = ({ track, nextTrack, duration, src }) => {
 
     const { minutes, seconds } = useTimeConverter(trackDuration)
 
-    const handleClick = () => {
-        if (isPlaying) {
-            audioRef.current.pause();
-            setIsCurrentPlaying(false);
-        } else {
+    useEffect(() => {
+        if (currentMusic.song === track && isPlaying) {
             audioRef.current.currentTime = track.timeToStart;
             audioRef.current.src = src;
             audioRef.current.play();
             setIsCurrentPlaying(true);
+        } else if (currentMusic.song !== track) {
+            audioRef.current.pause();
+            setIsCurrentPlaying(false);
         }
+    }, [currentMusic, isPlaying, track, src]);
 
-        togglePlay();
+
+
+    const handleClick = () => {
+        if (currentMusic.song === track && isPlaying) {
+            audioRef.current.pause();
+            setIsPlaying(false);
+            setIsCurrentPlaying(false);
+            return;
+        }
+        audioRef.current.currentTime = track.timeToStart;
+        audioRef.current.src = src;
+        audioRef.current.play();
+
+        setIsPlaying(true);
+        setIsCurrentPlaying(true);
+
+        setCurrentMusic({ ...currentMusic, song: track });
     }
 
 
@@ -40,12 +57,14 @@ export const Song = ({ track, nextTrack, duration, src }) => {
             <span className="song-number">{track.id}</span>
             <p className="song-title">{track.title}</p>
             <p className="song-duration">{minutes}:{seconds}</p>
-            <audio ref={audioRef}></audio>
+            <audio ref={audioRef} />
+
         </div>
     )
 }
 
 Song.propTypes = {
+    playlist: PropTypes.object.isRequired,
     track: PropTypes.object.isRequired,
     nextTrack: PropTypes.object,
     duration: PropTypes.number.isRequired,

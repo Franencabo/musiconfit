@@ -11,10 +11,7 @@ export const Playlist = ({ playlist }) => {
 
     const playlistSelected = playlist.find(playlist => playlist.id === id);
 
-
     const { title, banner, tracks, duration, src } = playlistSelected;
-
-
 
     return (
         <main className="main rounded-section">
@@ -37,7 +34,7 @@ export const Playlist = ({ playlist }) => {
 
                         const nextTrack = tracks[index + 1];
 
-                        return <Song key={index} track={track} nextTrack={nextTrack} duration={duration} src={src} />
+                        return <Song key={index} playlist={playlistSelected} track={track} nextTrack={nextTrack} duration={duration} src={src} />
                     })}
                 </div>
                 <div className="pitch-control"></div>

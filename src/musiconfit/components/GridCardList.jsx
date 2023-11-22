@@ -1,17 +1,16 @@
 import { Card } from "./Card"
-import * as playlist from "../../lib/data.json"
+import * as playlists from "../../lib/data.json"
 
 
 
 
-const playlistArray = playlist.default;
+const playlistsArray = playlists.default;
 export const GridCardList = () => {
     return (
         <main className="main rounded-section grid-card-list">
-            {playlistArray.map((item, index) => {
+            {playlistsArray.map((item, index) => {
                 return <Card playlist={item} key={index} />
             })}
-
         </main>
     )
 }

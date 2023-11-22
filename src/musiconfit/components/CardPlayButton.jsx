@@ -2,14 +2,14 @@ import PropTypes from "prop-types";
 import { Play } from './icons/Play';
 import { Pause } from './icons/Pause';
 
-import { userPlayerStore } from '../store/playerStore';
+import { usePlayerStore } from '../store/playerStore';
 
 export const CardPlayButton = ({ id }) => {
     const {
         currentMusic,
         setCurrentMusic,
         isPlaying,
-        setIsPlaying } = userPlayerStore(state => state);
+        setIsPlaying } = usePlayerStore(state => state);
 
 
     const isPlayingPlaylist = isPlaying && currentMusic?.playlist.id === id;

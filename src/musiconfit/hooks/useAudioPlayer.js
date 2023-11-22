@@ -1,14 +1,14 @@
 import { useEffect, useRef } from "react";
-import { userPlayerStore } from "../store/playerStore";
+import { usePlayerStore } from "../store/playerStore";
 
 export const useAudioPlayer = () => {
-  const { currentMusic, isPlaying, setIsPlaying } = userPlayerStore();
+  const { currentMusic, isPlaying, setIsPlaying } = usePlayerStore();
   const audioRef = useRef();
 
   useEffect(() => {
     const { song, playlist } = currentMusic;
 
-    if (song) {
+    if (song && isPlaying) {
       const src = playlist;
       audioRef.current.src = src;
       audioRef.current.currentTime = song.timeToStart;
@@ -18,7 +18,7 @@ export const useAudioPlayer = () => {
         setIsPlaying(true);
       }
     }
-  }, [currentMusic, isPlaying]);
+  }, [currentMusic.song, isPlaying]);
 
   const togglePlay = () => {
     if (isPlaying) {
