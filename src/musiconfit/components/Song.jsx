@@ -4,7 +4,7 @@ import { usePlayerStore } from '../store/playerStore';
 import { useEffect, useRef, useState } from 'react';
 
 
-export const Song = ({ track, nextTrack, duration, src }) => {
+export const Song = ({ playlist, track, nextTrack, duration, src }) => {
     const { currentMusic, setCurrentMusic, isPlaying, setIsPlaying } = usePlayerStore(state => state);
 
     const [isCurrentPlaying, setIsCurrentPlaying] = useState(false);
@@ -28,7 +28,7 @@ export const Song = ({ track, nextTrack, duration, src }) => {
             audioRef.current.pause();
             setIsCurrentPlaying(false);
         }
-    }, [currentMusic, isPlaying, track, src]);
+    }, [currentMusic, isPlaying, setIsPlaying]);
 
 
 
@@ -39,6 +39,7 @@ export const Song = ({ track, nextTrack, duration, src }) => {
             setIsCurrentPlaying(false);
             return;
         }
+
         audioRef.current.currentTime = track.timeToStart;
         audioRef.current.src = src;
         audioRef.current.play();
@@ -46,7 +47,7 @@ export const Song = ({ track, nextTrack, duration, src }) => {
         setIsPlaying(true);
         setIsCurrentPlaying(true);
 
-        setCurrentMusic({ ...currentMusic, song: track });
+        setCurrentMusic({ ...currentMusic, playlist, song: track });
     }
 
 

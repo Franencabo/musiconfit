@@ -1,15 +1,20 @@
-
+import Proptypes from 'prop-types';
 import { Play } from './icons/Play';
 import { Pause } from './icons/Pause';
 import { usePlayerStore } from '../store/playerStore';
 
 
-
 export const Player = () => {
-    const { isPlaying, setIsPlaying } = usePlayerStore(state => state);
+    const { isPlaying, setIsPlaying, currentMusic } = usePlayerStore(state => state);
+    console.log("IsPlaying state:", isPlaying);
 
     const handleClick = () => {
-        setIsPlaying(!isPlaying);
+        if (isPlaying) {
+            console.log(currentMusic.playlist.src);
+            setIsPlaying(false);
+        } else {
+            setIsPlaying(true);
+        }
     }
 
 
@@ -26,6 +31,11 @@ export const Player = () => {
 
         </footer>
     )
+}
+
+
+Player.propTypes = {
+    audioRef: Proptypes.object
 }
 
 
