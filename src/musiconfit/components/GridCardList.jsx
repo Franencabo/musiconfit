@@ -2,8 +2,6 @@ import { Card } from "./Card"
 import * as playlists from "../../lib/data.json"
 
 
-
-
 const playlistsArray = playlists.default;
 export const GridCardList = () => {
     return (

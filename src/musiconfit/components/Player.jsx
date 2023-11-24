@@ -2,17 +2,19 @@ import Proptypes from 'prop-types';
 import { Play } from './icons/Play';
 import { Pause } from './icons/Pause';
 import { usePlayerStore } from '../store/playerStore';
+import { useAudio } from './AudioContext.jsx';
 
 
 export const Player = () => {
-    const { isPlaying, setIsPlaying, currentMusic } = usePlayerStore(state => state);
-    console.log("IsPlaying state:", isPlaying);
+    const { isPlaying, setIsPlaying } = usePlayerStore(state => state);
+    const audio = useAudio();
 
     const handleClick = () => {
         if (isPlaying) {
-            console.log(currentMusic.playlist.src);
+            audio.pause()
             setIsPlaying(false);
         } else {
+
             setIsPlaying(true);
         }
     }
