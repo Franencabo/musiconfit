@@ -1,7 +1,8 @@
+import React from 'react';
 // AudioContext.jsx
-import { createContext, useContext } from 'react';
+import { useContext } from 'react';
 
-const AudioContext = createContext();
+const AudioContext = React.createContext();
 
 // eslint-disable-next-line react/prop-types
 export const AudioProvider = ({ children }) => {

@@ -1,6 +1,7 @@
 import mysql from "mysql2/promise";
+// import process from "process";
 
-const config = {
+const DEFAULT_CONFIG = {
   host: "localhost",
   user: "root",
   port: 3306,
@@ -8,9 +9,9 @@ const config = {
   database: "musiconfitdb",
 };
 
-// const connectionString = DEFAULT_CONFIG;
+const connectionString = DEFAULT_CONFIG;
 
-const connection = await mysql.createConnection(config);
+const connection = await mysql.createConnection(connectionString);
 
 export class PlaylistsModel {
   static async getAllPlaylists() {

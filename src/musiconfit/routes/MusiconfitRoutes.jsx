@@ -7,8 +7,6 @@ export const MusiconfitRoutes = () => {
         <Routes>
             <Route path="/" element={<MusiconfitPage />} />
             <Route path="/playlist/:id" element={<PlaylistPage />} />
-
-
         </Routes>
     )
 }

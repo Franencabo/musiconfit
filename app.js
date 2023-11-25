@@ -4,7 +4,7 @@ import "dotenv/config";
 import process from "process";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
-import { musicRouter } from "./routes/playlists.js";
+import { musicRouter } from "./server/routes/playlists.js";
 
 const app = express();
 
@@ -21,24 +21,11 @@ app.use((req, res, next) => {
   next();
 });
 
-// Middleware para manejar solicitudes JSON
 app.use(express.json());
 
 app.use("/", musicRouter);
 
-// // Configuración de middleware para servir los archivos estáticos
 app.use(express.static(path.join(__dirname, "./dist")));
-
-// // Manejo de rutas en el lado del servidor
-// app.get("/", (req, res) => {
-//   // Tu lógica de manejo de datos aquí
-//   res.json({ message: "Datos desde el servidor" });
-// });
-
-// Manejo de cualquier ruta desconocida devolviendo la misma página principal
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./dist", "index.html"));
-});
 
 const PORT = process.env.PORT || 1234;
 
