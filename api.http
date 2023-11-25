@@ -1,0 +1,2 @@
+### recuperar todas las playlists
+GET http://localhost:1234
