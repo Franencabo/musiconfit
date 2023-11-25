@@ -1,5 +1,4 @@
 import mysql from "mysql2/promise";
-// import process from "process";
 
 const DEFAULT_CONFIG = {
   host: "localhost",

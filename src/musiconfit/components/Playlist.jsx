@@ -6,6 +6,7 @@ import { TimeIcon } from "./icons/Time"
 
 
 export const Playlist = ({ playlist }) => {
+    console.log(playlist);
 
     const { id } = useParams();
 

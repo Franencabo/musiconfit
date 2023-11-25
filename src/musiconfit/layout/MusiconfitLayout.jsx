@@ -1,31 +1,40 @@
 import { useState, useEffect } from "react";
-import { AsideMenu, GridCardList, Player } from "../components"
-
+import { AsideMenu, GridCardList, Player } from "../components";
 
 export const MusiconfitLayout = () => {
-    const [allPlaylists, setAllPlaylists] = useState([{}]);
+    const [allPlaylists, setAllPlaylists] = useState([]);
 
     const getAllPlaylists = async () => {
-        const response = await fetch(`http://localhost:1234/`);
-        const allPlaylists = await response.json();
-        return allPlaylists;
-    }
-
+        try {
+            const response = await fetch("http://localhost:1234/");
+            const playlists = await response.json();
+            return playlists;
+        } catch (error) {
+            console.error("Error fetching playlists:", error);
+            return [];
+        }
+    };
 
     useEffect(() => {
-        // fetch data from server
-        const allPlaylists = getAllPlaylists();
-        setAllPlaylists(allPlaylists);
-    }, [])
+        const fetchData = async () => {
+            try {
+                // fetch data from server
+                const playlists = await getAllPlaylists();
+                setAllPlaylists(playlists);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <>
-
+            {!allPlaylists.length && <div>Está cargando</div>}
             <AsideMenu />
             <GridCardList allPlaylists={allPlaylists} />
             <Player />
-
         </>
-
-    )
-}
+    );
+};

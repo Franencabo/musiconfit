@@ -3,8 +3,6 @@ import { Card } from "./Card"
 
 
 export const GridCardList = ({ allPlaylists }) => {
-
-
     return (
         <main className="main rounded-section grid-card-list">
             {allPlaylists.map((item, index) => {
