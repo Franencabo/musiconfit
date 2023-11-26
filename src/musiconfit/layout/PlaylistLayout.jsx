@@ -4,18 +4,18 @@ import { useParams } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 export const PlaylistLayout = () => {
-    const [tracks, setTracks] = useState([]);
+    const [playlistInfo, setPlaylistInfo] = useState({});
     const { id } = useParams();
 
-    const getAllTracks = async () => {
+    const getPlaylistInfo = async () => {
         try {
             const response = await fetch(`http://localhost:1234/playlist/${id}`);
-            const tracks = await response.json();
-            return tracks;
+            const playlistInfo = await response.json();
+            return playlistInfo;
 
         } catch (error) {
             console.error("Error fetching playlists:", error);
-            return [];
+            return {};
         }
     }
 
@@ -23,8 +23,8 @@ export const PlaylistLayout = () => {
         const fetchData = async () => {
             try {
                 // fetch data from server
-                const tracks = await getAllTracks();
-                setTracks(tracks);
+                const playlistInfo = await getPlaylistInfo();
+                setPlaylistInfo(playlistInfo);
 
             } catch (error) {
                 console.error("Error fetching data:", error);
@@ -39,8 +39,7 @@ export const PlaylistLayout = () => {
     return (
         <>
             <AsideMenu />
-            <div>{JSON.stringify(tracks)}</div>
-            {/* <Playlist playlist={playlist} /> */}
+            {Object.keys(playlistInfo).length > 0 && <Playlist playlist={playlistInfo} />}
             <Player />
         </>
 

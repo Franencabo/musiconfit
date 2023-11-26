@@ -5,4 +5,4 @@ export const musicRouter = Router();
 
 musicRouter.get("/", MusicController.getAllPlaylists);
 
-musicRouter.get("/playlist/:id", MusicController.getAllTracksFromPlaylistId);
+musicRouter.get("/playlist/:id", MusicController.getPlaylistWithTracks);

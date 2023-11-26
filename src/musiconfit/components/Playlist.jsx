@@ -1,17 +1,16 @@
 import PropTypes from "prop-types";
 
-// import { Song } from "./Song";
-// import { TimeIcon } from "./icons/Time"
+import { Song } from "./Song";
+import { TimeIcon } from "./icons/Time"
 
 
 export const Playlist = ({ playlist }) => {
 
-    // const { title, banner, tracks, duration } = playlist;
-
+    const { title, banner, tracks, duration } = playlist;
 
     return (
         <main className="main rounded-section">
-            {/* <picture className="banner">
+            <picture className="banner">
                 <img className="banner-img" src={banner} alt="" />
                 <div className="overlay"></div>
             </picture>
@@ -34,11 +33,11 @@ export const Playlist = ({ playlist }) => {
                     })}
                 </div>
                 <div className="pitch-control"></div>
-            </div> */}
+            </div>
         </main>
     );
 };
 
 Playlist.propTypes = {
-    playlist: PropTypes.array
+    playlist: PropTypes.object.isRequired
 };

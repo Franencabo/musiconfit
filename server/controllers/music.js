@@ -6,9 +6,9 @@ export class MusicController {
     res.json(playlists);
   }
 
-  static async getAllTracksFromPlaylistId(req, res) {
+  static async getPlaylistWithTracks(req, res) {
     const { id } = req.params;
-    const playlist = await PlaylistsModel.getAllTracksFromPlaylistId({ id });
+    const playlist = await PlaylistsModel.getPlaylistWithTracks({ id });
     if (playlist) res.json(playlist);
   }
 }

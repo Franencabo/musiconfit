@@ -25,4 +25,40 @@ export class PlaylistsModel {
     );
     return rows;
   }
+
+  static async getPlaylistWithTracks({ id }) {
+    const [playlistResult] = await connection.execute(
+      "SELECT * FROM playlists WHERE id = ?",
+      [id]
+    );
+
+    if (playlistResult.length === 0) {
+      return null;
+    }
+
+    const playlistData = {
+      id: playlistResult[0].id,
+      title: playlistResult[0].title,
+      color: playlistResult[0].color,
+      cover: playlistResult[0].cover,
+      duration: playlistResult[0].duration,
+      banner: playlistResult[0].banner,
+      src: playlistResult[0].src,
+      tracks: [],
+    };
+
+    const [tracksResult] = await connection.execute(
+      "SELECT * FROM tracks WHERE playlist_id = ?",
+      [id]
+    );
+
+    playlistData.tracks = tracksResult.map((track) => ({
+      id: track.id,
+      title: track.title,
+      artist: track.artist,
+      timeToStart: track.timeToStart,
+    }));
+
+    return playlistData;
+  }
 }
