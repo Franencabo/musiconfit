@@ -18,7 +18,7 @@ export class PlaylistsModel {
     return rows;
   }
 
-  static async getPlaylistById({ id }) {
+  static async getAllTracksFromPlaylistId({ id }) {
     const [rows] = await connection.execute(
       "SELECT * FROM tracks WHERE playlist_id = ?",
       [id]

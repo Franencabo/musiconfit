@@ -7,7 +7,6 @@ import { usePlayerStore } from '../store/playerStore';
 export const CardPlayButton = ({ id }) => {
     const {
         currentMusic,
-        setCurrentMusic,
         isPlaying,
         setIsPlaying } = usePlayerStore(state => state);
 
@@ -19,13 +18,6 @@ export const CardPlayButton = ({ id }) => {
             setIsPlaying(false)
             return
         }
-        fetch(`/api/get-info-playlist?id=${id}`)
-            .then(res => res.json())
-            .then(data => {
-                const { songs, playlist } = data
-                setIsPlaying(true)
-                setCurrentMusic({ songs, playlist, song: songs[0] })
-            })
     }
 
     return (
@@ -38,5 +30,5 @@ export const CardPlayButton = ({ id }) => {
 
 
 CardPlayButton.propTypes = {
-    id: PropTypes.string.isRequired
+    id: PropTypes.number.isRequired
 }

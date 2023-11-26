@@ -8,7 +8,7 @@ export const Card = ({ playlist }) => {
 
     return (
         <div className="card">
-            <Link to={`/playlist/${id}`} className="card-link">
+            <Link to={`/playlist/${id}`} id={id} className="card-link">
                 <picture className="card-picture">
                     <img className="card-image" src={cover} alt={title} />
                 </picture>
@@ -19,8 +19,6 @@ export const Card = ({ playlist }) => {
                 </div>
 
                 <CardPlayButton id={id} />
-
-
             </Link>
         </div>
     )

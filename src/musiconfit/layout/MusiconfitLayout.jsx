@@ -31,7 +31,6 @@ export const MusiconfitLayout = () => {
 
     return (
         <>
-            {!allPlaylists.length && <div>Está cargando</div>}
             <AsideMenu />
             <GridCardList allPlaylists={allPlaylists} />
             <Player />
