@@ -33,8 +33,8 @@ export const VolumeControl = () => {
     }, [volume])
 
     return (
-        <div>
-            <button onClick={handleClickVolume}>
+        <div className="volume-control">
+            <button className="volume-button" onClick={handleClickVolume}>
                 {isVolumeSilence ? <VolumeSilence className="volume-icon" /> : <Volume className="volume-icon" />}
             </button>
             <input
