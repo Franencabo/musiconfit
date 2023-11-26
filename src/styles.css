@@ -99,7 +99,8 @@ html {
   min-height: 100px;
   position: fixed;
   left: 0;
-  bottom: -100px;
+  bottom: 0;
+  /* bottom: -100px; */
   background: linear-gradient(90deg, #1499b6 0%, #fe00e5 100%);
   width: 100%;
   display: flex;
@@ -109,12 +110,9 @@ html {
   transition: bottom 0.5s ease; /* Transición suave */
 }
 
-.footer.enabled-player {
+/* .footer.enabled-player {
   bottom: 0;
-}
-
-.footer.disabled-player {
-}
+} */
 
 .footer-button {
   background-color: white;
@@ -124,14 +122,14 @@ html {
   border: none;
 }
 
-.footer.enabled-player .footer-button {
+/* .footer.enabled-player .footer-button {
   display: block;
   opacity: 1;
 }
 .footer.disabled-player .footer-button {
   display: none;
   opacity: 0;
-}
+} */
 
 .player-icon,
 .pause-icon {
