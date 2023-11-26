@@ -1,85 +1,129 @@
 [
     {
-        "id": "1",
-        "title": "Dance 4",
-        "color": "fucsia",
-        "cover": "../../../covers/DANCE4.jpeg",
-        "tracks": [
-            {
-                "id": "1",
-                "title": "Hola que tal",
-                "artist": "J Balvin",
-                "timeToStart": 0
-            },
-            {
-                "id": "2",
-                "title": "Hola que tal",
-                "artist": "J Balvin",
-                "timeToStart": 0
-            },
-            {
-                "id": "3",
-                "title": "Hola que tal",
-                "artist": "J Balvin",
-                "timeToStart": 0
-            },
-            {
-                "id": "4",
-                "title": "Hola que tal",
-                "artist": "J Balvin",
-                "timeToStart": 0
-            },
-            {
-                "id": "5",
-                "title": "Hola que tal",
-                "artist": "J Balvin",
-                "timeToStart": 0
-            },
-            {
-                "id": "6",
-                "title": "Hola que tal",
-                "artist": "J Balvin",
-                "timeToStart": 0
-            },
-            {
-                "id": "7",
-                "title": "Hola que tal",
-                "artist": "J Balvin",
-                "timeToStart": 0
-            },
-            {
-                "id": "8",
-                "title": "Hola que tal",
-                "artist": "J Balvin",
-                "timeToStart": 0
-            },
-            {
-                "id": "9",
-                "title": "Hola que tal",
-                "artist": "J Balvin",
-                "timeToStart": 0
-            }
-        ],
-        "category": "Dance",
-        "description": "La mejor música del momento"
-    },
-    {
-        "id": "2",
-        "title": "Dance 5",
-        "color": "blue",
-        "cover": "../../../covers/DANCE5.jpeg",
-        "tracks": [],
-        "category": "",
-        "description": "La mejor música del momento"
-    },
-    {
         "id": "3",
         "title": "Dance 6",
         "color": "blue",
         "cover": "../../../covers/DANCE6.jpeg",
-        "tracks": [],
-        "category": "",
-        "description": "La mejor música del momento"
+        "duration": 3520,
+        "banner": "../../../banners/Rihanna-Banner.jpeg",
+        "src": "../../../music/RihannaMix.mp3",
+        "description": "La mejor música del momento",
+        "tracks": [
+            {
+                "id": 1,
+                "title": "What a feeling",
+                "artist": "Block & Crown",
+                "timeToStart": 0
+            },
+            {
+                "id": 2,
+                "title": "Call me",
+                "artist": "Belters Only",
+                "timeToStart": 200
+            },
+            {
+                "id": 3,
+                "title": "Long Train",
+                "artist": "Bougenvilla ft. Chris Alain",
+                "timeToStart": 397
+            },
+            {
+                "id": 4,
+                "title": "Cuff it",
+                "artist": "Beyoncè",
+                "timeToStart": 538
+            },
+            {
+                "id": 5,
+                "title": "Never gonna not dance again",
+                "artist": "Pink",
+                "timeToStart": 721
+            },
+            {
+                "id": 6,
+                "title": "Oh No You Didn't",
+                "artist": "Hix & Kelli-Leigh",
+                "timeToStart": 897
+            },
+            {
+                "id": 7,
+                "title": "Edge of Seventeen",
+                "artist": "Wuki",
+                "timeToStart": 1070
+            },
+            {
+                "id": 8,
+                "title": "Offshore",
+                "artist": "Kryder",
+                "timeToStart": 1070
+            },
+            {
+                "id": 9,
+                "title": "It Feels So Good (NIGHT/MOVES Remix)",
+                "artist": "Sonique",
+                "timeToStart": 1460
+            },
+            {
+                "id": 10,
+                "title": "Blue",
+                "artist": "David Guetta & Bebe Rexha",
+                "timeToStart": 1652
+            },
+            {
+                "id": 11,
+                "title": "Lionheart",
+                "artist": "Joel Corry & Tom Grennan",
+                "timeToStart": 1832
+            },
+            {
+                "id": 12,
+                "title": "Work it",
+                "artist": "Dance System ft. DJ Deeon",
+                "timeToStart": 1998
+            },
+            {
+                "id": 13,
+                "title": "Make You Sweat",
+                "artist": "Majestic",
+                "timeToStart": 2235
+            },
+            {
+                "id": 14,
+                "title": "Daddy Shhh",
+                "artist": "Crusy & Mark Knight",
+                "timeToStart": 2397
+            },
+            {
+                "id": 15,
+                "title": "Alors on Dance (Tribal Mix)",
+                "artist": "Stromae",
+                "timeToStart": 2507
+            },
+            {
+                "id": 16,
+                "title": "Work (Tribal Mix)",
+                "artist": "Pupa Nas T, Denise Belfon, Kevin McKay",
+                "timeToStart": 2671
+            },
+            {
+                "id": 17,
+                "title": "Session 53 (Exclusive Mashup",
+                "artist": "Shakira ft. Bizarrap",
+                "timeToStart": 2805
+            },
+            {
+                "id": 18,
+                "title": "Unholy (Tribal Mix)",
+                "artist": "Sam Smith ft. Kim Petras",
+                "timeToStart": 3058
+            },
+            {
+                "id": 19,
+                "title": "Star Walkin' (Tribal Mix)",
+                "artist": "Lil Nas X",
+                "timeToStart": 3261
+            }
+        ]
     },
     {
         "id": "4",
@@ -107,6 +151,7 @@
         "duration": 3406,
         "banner": "../../../banners/Rihanna-Banner.jpeg",
         "src": "../../../music/RihannaMix.mp3",
+        "description": "La mejor música del momento",
         "tracks": [
             {
                 "id": 1,

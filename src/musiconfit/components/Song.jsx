@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { useAudio } from './AudioContext.jsx';
 
 
-export const Song = ({ playlist, track, nextTrack, duration }) => {
+export const Song = ({ number, playlist, track, nextTrack, duration }) => {
     const { currentMusic, setCurrentMusic, isPlaying, setIsPlaying } = usePlayerStore(state => state);
 
     const [isCurrentPlaying, setIsCurrentPlaying] = useState(false);
@@ -73,7 +73,7 @@ export const Song = ({ playlist, track, nextTrack, duration }) => {
 
     return (
         <div className={songStatus} onClick={handleClick}>
-            <span className="song-number">{track.id}</span>
+            <span className="song-number">{number + 1}</span>
             <p className="song-title">{track.title}</p>
             <p className="song-duration">{minutes}:{seconds}</p>
         </div>
@@ -84,5 +84,6 @@ Song.propTypes = {
     playlist: PropTypes.object.isRequired,
     track: PropTypes.object.isRequired,
     nextTrack: PropTypes.object,
-    duration: PropTypes.number.isRequired
+    duration: PropTypes.number.isRequired,
+    number: PropTypes.number.isRequired
 }

@@ -29,7 +29,7 @@ export const Playlist = ({ playlist }) => {
 
                         const nextTrack = tracks[index + 1];
 
-                        return <Song key={index} playlist={playlist} track={track} nextTrack={nextTrack} duration={duration} />
+                        return <Song key={index} number={index} playlist={playlist} track={track} nextTrack={nextTrack} duration={duration} />
                     })}
                 </div>
                 <div className="pitch-control"></div>
