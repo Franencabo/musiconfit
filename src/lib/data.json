@@ -5,8 +5,8 @@
         "color": "blue",
         "cover": "../../../covers/DANCE6.jpeg",
         "duration": 3520,
-        "banner": "../../../banners/Rihanna-Banner.jpeg",
-        "src": "../../../music/RihannaMix.mp3",
+        "banner": "../../../banners/DANCE6-Banner.jpeg",
+        "src": "../../../music/Dance6.mp3",
         "description": "La mejor música del momento",
         "tracks": [
             {
@@ -130,18 +130,126 @@
         "title": "Dance 7",
         "color": "brown",
         "cover": "../../../covers/DANCE7.jpeg",
-        "tracks": [],
-        "category": "",
-        "description": "La mejor música del momento"
-    },
-    {
-        "id": "5",
-        "title": "Latino Mix 4",
-        "color": "red",
-        "cover": "../../../covers/LATINO4.jpeg",
-        "tracks": [],
-        "category": "Latino",
-        "description": "La mejor música del momento"
+        "duration": 3428,
+        "banner": "../../../banners/DANCE7-Banner.jpeg",
+        "src": "../../../music/Dance7.mp3",
+        "description": "La mejor música del momento",
+        "tracks": [
+            {
+                "id": 1,
+                "title": "Satellite (Dance Mix)",
+                "artist": "Bebe Rexha & Snoop Dogg",
+                "timeToStart": 0
+            },
+            {
+                "id": 2,
+                "title": "The music began to play",
+                "artist": "Mark Knight, Armand Van Helden",
+                "timeToStart": 230
+            },
+            {
+                "id": 3,
+                "title": "Nothing else matters",
+                "artist": "Mista Jam",
+                "timeToStart": 440
+            },
+            {
+                "id": 4,
+                "title": "Work with my love",
+                "artist": "Alok & James Arthur",
+                "timeToStart": 610
+            },
+            {
+                "id": 5,
+                "title": "Sweat 2022",
+                "artist": "C&C Music Factory",
+                "timeToStart": 820
+            },
+            {
+                "id": 6,
+                "title": "Enchanté",
+                "artist": "Lewis Thompson ft. Clementine Douglas",
+                "timeToStart": 870
+            },
+            {
+                "id": 7,
+                "title": "Do you know",
+                "artist": "Just Kiddin",
+                "timeToStart": 1014
+            },
+            {
+                "id": 8,
+                "title": "Street Stuff",
+                "artist": "Majestic",
+                "timeToStart": 1014
+            },
+            {
+                "id": 9,
+                "title": "Renegade Body",
+                "artist": "Block & Crown, Lissat",
+                "timeToStart": 1152
+            },
+            {
+                "id": 10,
+                "title": "Alo Alo",
+                "artist": "Martin Solveig",
+                "timeToStart": 1522
+            },
+            {
+                "id": 11,
+                "title": "Groove Tonight (Saxo Mix)",
+                "artist": "Mr.Belt & Wezol",
+                "timeToStart": 1673
+            },
+            {
+                "id": 12,
+                "title": "Insomnia 2023",
+                "artist": "Faithless",
+                "timeToStart": 1860
+            },
+            {
+                "id": 13,
+                "title": "Mr. Vain 2023",
+                "artist": "Block & Crown",
+                "timeToStart": 2106
+            },
+            {
+                "id": 14,
+                "title": "Feel this good (Jordie Harsh remix)",
+                "artist": "Sigala",
+                "timeToStart": 2260
+            },
+            {
+                "id": 15,
+                "title": "Be my lover (Future Rave Mix)",
+                "artist": "La Bouche, David Guetta & Hypaton",
+                "timeToStart": 2451
+            },
+            {
+                "id": 16,
+                "title": "Be my lover (Future Rave Mix)",
+                "artist": "La Bouche, David Guetta & Hypaton",
+                "timeToStart": 2451
+            },
+            {
+                "id": 17,
+                "title": "Phenomenal (Tribal Mix)",
+                "artist": "Noa Kirel",
+                "timeToStart": 2640
+            },
+            {
+                "id": 18,
+                "title": "Tattoo (Tribal Mix)",
+                "artist": "Loreen",
+                "timeToStart": 2852
+            },
+            {
+                "id": 19,
+                "title": "It's not right (Oye! Tribal Mix)",
+                "artist": "Whitney Houston",
+                "timeToStart": 3124
+            }
+        ]
     },
     {
         "id": "6",

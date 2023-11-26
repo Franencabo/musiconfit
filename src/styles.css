@@ -58,6 +58,7 @@ html {
 }
 
 .card {
+  max-height: 420px;
   position: relative;
   background-color: #181818;
   display: flex;
@@ -98,13 +99,21 @@ html {
   min-height: 100px;
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: -100px;
   background: linear-gradient(90deg, #1499b6 0%, #fe00e5 100%);
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
+  transition: bottom 0.5s ease; /* Transición suave */
+}
+
+.footer.enabled-player {
+  bottom: 0;
+}
+
+.footer.disabled-player {
 }
 
 .footer-button {
@@ -113,6 +122,15 @@ html {
   width: 40px;
   height: 40px;
   border: none;
+}
+
+.footer.enabled-player .footer-button {
+  display: block;
+  opacity: 1;
+}
+.footer.disabled-player .footer-button {
+  display: none;
+  opacity: 0;
 }
 
 .player-icon,
@@ -189,6 +207,7 @@ html {
   align-items: center;
   padding: 10px 0;
   color: rgba(250, 250, 250, 0.6);
+  max-height: 80pxpx;
 }
 
 .song.is-playing {
@@ -203,8 +222,19 @@ html {
 }
 
 .playlist-title,
-.song-title {
+.song-info {
   width: 80%;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.song-artist {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .playlist-duration,

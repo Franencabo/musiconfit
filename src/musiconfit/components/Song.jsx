@@ -74,7 +74,10 @@ export const Song = ({ number, playlist, track, nextTrack, duration }) => {
     return (
         <div className={songStatus} onClick={handleClick}>
             <span className="song-number">{number + 1}</span>
-            <p className="song-title">{track.title}</p>
+            <div className="song-info">
+                <p className="song-title">{track.title}</p>
+                <p className="song-artist">{track.artist}</p>
+            </div>
             <p className="song-duration">{minutes}:{seconds}</p>
         </div>
     )
