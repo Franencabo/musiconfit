@@ -11,7 +11,7 @@ html {
   grid-template-areas:
     "aside main main"
     "player player player";
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: 20% 1fr;
   grid-template-rows: 1fr auto;
   padding: 10px;
   gap: 20px;
@@ -107,7 +107,8 @@ html {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  transition: bottom 0.5s ease; /* Transición suave */
+  transition: bottom 0.5s ease;
+  z-index: 4;
 }
 
 /* .footer.enabled-player {
@@ -166,7 +167,7 @@ html {
   width: 220px;
 }
 
-input[type="range"] {
+input[type="range"].volume-slider {
   -webkit-appearance: none;
   width: 100%;
   height: 12px;
@@ -184,7 +185,7 @@ input[type="range"] {
   transition: opacity 0.2s;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+.volume-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 16px;
@@ -201,7 +202,6 @@ input[type="range"]::-webkit-slider-thumb {
   transform: translate(-80%, 100%);
   opacity: 0;
   transition: transform 0.5s ease, opacity 0.5s ease;
-
   width: 40px;
   height: 40px;
   background-color: white;
@@ -220,7 +220,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .banner {
   position: relative;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .banner-img {
@@ -243,25 +243,29 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .playlist-dashboard {
-  padding: 60px;
+  padding: 0 60px 60px;
   margin-bottom: 150px;
+  display: flex;
 }
 
 .playlist-name {
   color: rgba(250, 250, 250, 0.6);
   font-weight: 600;
   border-bottom: 1px solid rgba(250, 250, 250, 0.6);
-  padding-bottom: 16px;
   display: flex;
   align-items: center;
+}
+
+.playlist-table {
+  width: 70%;
 }
 
 .song {
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  padding: 4px 0;
   color: rgba(250, 250, 250, 0.6);
-  max-height: 80pxpx;
+  max-height: 80px;
 }
 
 .song.is-playing {
@@ -272,18 +276,20 @@ input[type="range"]::-webkit-slider-thumb {
 .song-number {
   font-weight: 600;
   font-size: 30px;
-  width: 10%;
+  width: 5%;
+  text-align: right;
+  padding-right: 40px;
 }
 
 .playlist-title,
 .song-info {
-  width: 80%;
+  width: 85%;
 }
 
 .song-title {
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 0;
+  margin-bottom: -8px;
 }
 
 .song-artist {
@@ -295,4 +301,135 @@ input[type="range"]::-webkit-slider-thumb {
 .song-duration {
   text-align: center;
   width: 30%;
+}
+
+.pitch-control {
+  width: 30%;
+  position: relative;
+}
+
+input[type="range"].pitch-slider {
+  -webkit-appearance: none;
+  transform: rotate(90deg);
+  width: 400px;
+  height: 300px;
+  margin-top: 50%;
+  position: relative;
+  z-index: 3;
+  background: transparent;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.pitch-slider::-webkit-slider-runnable-track {
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.pitch-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 120px;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pitch-lines {
+  position: absolute;
+  top: 170px;
+  left: 155px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+pitch-lines-relative {
+  position: relative;
+}
+
+.pitch-line {
+  border: 3px solid rgba(250, 250, 250, 0.4);
+  border-radius: 2px;
+  width: 20%;
+  position: absolute;
+}
+
+.pitch-line:nth-child(2) {
+  top: 20px;
+}
+
+.pitch-line:nth-child(3) {
+  top: 40px;
+}
+
+.pitch-line:nth-child(4) {
+  top: 60px;
+}
+
+.pitch-line:nth-child(5) {
+  top: 80px;
+}
+
+.pitch-line:nth-child(6) {
+  top: 100px;
+}
+
+.pitch-line:nth-child(7) {
+  top: 120px;
+}
+
+.pitch-line:nth-child(8) {
+  top: 140px;
+}
+
+.pitch-line:nth-child(9) {
+  top: 160px;
+}
+
+.pitch-line:nth-child(10) {
+  top: 180px;
+}
+
+.pitch-line:nth-child(11) {
+  top: 200px;
+}
+
+.pitch-line:nth-child(12) {
+  top: 220px;
+}
+
+.pitch-line:nth-child(13) {
+  top: 240px;
+}
+
+.pitch-line:nth-child(14) {
+  top: 260px;
+}
+
+.pitch-line:nth-child(15) {
+  top: 280px;
+}
+
+.pitch-line:nth-child(16) {
+  top: 300px;
+}
+
+.pitch-line:nth-child(17) {
+  top: 320px;
+}
+
+.pitch-line:nth-child(18) {
+  top: 340px;
+}
+
+.pitch-line:nth-child(19) {
+  top: 360px;
+}
+
+.pitch-line:nth-child(20) {
+  top: 380px;
 }

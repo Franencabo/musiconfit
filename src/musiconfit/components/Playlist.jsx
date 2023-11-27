@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 
 import { Song } from "./Song";
 import { TimeIcon } from "./icons/Time"
+import { PitchControl } from "./PitchControl";
 
 
 export const Playlist = ({ playlist }) => {
@@ -32,7 +33,7 @@ export const Playlist = ({ playlist }) => {
                         return <Song key={index} number={index} playlist={playlist} track={track} nextTrack={nextTrack} duration={duration} />
                     })}
                 </div>
-                <div className="pitch-control"></div>
+                <PitchControl />
             </div>
         </main>
     );
