@@ -12,7 +12,6 @@ export const PitchControl = () => {
     console.log(internalPlaybackRate);
 
     const handleChangePitchChange = (value) => {
-        console.log(value);
         setInternalPlaybackRate(value);
         setPitch(value);
     }
@@ -36,7 +35,7 @@ export const PitchControl = () => {
             <div className="pitch-lines">
                 <div className='pitch-lines-relative'>
                     {Array(20).fill().map((item, index) => {
-                        return (<span span key={index} className="pitch-line"></span>)
+                        return (<span key={index} className="pitch-line"></span>)
                     })}
 
                 </div>
