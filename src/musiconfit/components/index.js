@@ -5,6 +5,5 @@ export * from "./Player";
 export * from "./Playlist";
 export * from "./UserControls";
 export * from "./RecentItems";
-export * from "./NavBar";
 export * from "./GridCardList";
 export * from "./Card";

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-
+import { Header } from "../components/Header";
 import { Song } from "./Song";
 import { TimeIcon } from "./icons/Time"
 import { PitchControl } from "./PitchControl";
@@ -11,6 +11,7 @@ export const Playlist = ({ playlist }) => {
 
     return (
         <main className="main rounded-section">
+            <Header />
             <picture className="banner">
                 <img className="banner-img" src={banner} alt="" />
                 <div className="overlay"></div>

@@ -1,362 +1,377 @@
 [
     {
-        "id": "3",
-        "title": "Dance 6",
-        "color": "blue",
-        "cover": "../../../covers/DANCE6.jpeg",
-        "duration": 3520,
-        "banner": "../../../banners/DANCE6-Banner.jpeg",
-        "src": "../../../music/Dance6.mp3",
-        "description": "La mejor música del momento",
-        "tracks": [
-            {
-                "id": 1,
-                "title": "What a feeling",
-                "artist": "Block & Crown",
-                "timeToStart": 0
-            },
-            {
-                "id": 2,
-                "title": "Call me",
-                "artist": "Belters Only",
-                "timeToStart": 200
-            },
-            {
-                "id": 3,
-                "title": "Long Train",
-                "artist": "Bougenvilla ft. Chris Alain",
-                "timeToStart": 397
-            },
-            {
-                "id": 4,
-                "title": "Cuff it",
-                "artist": "Beyoncè",
-                "timeToStart": 538
-            },
-            {
-                "id": 5,
-                "title": "Never gonna not dance again",
-                "artist": "Pink",
-                "timeToStart": 721
-            },
-            {
-                "id": 6,
-                "title": "Oh No You Didn't",
-                "artist": "Hix & Kelli-Leigh",
-                "timeToStart": 897
-            },
-            {
-                "id": 7,
-                "title": "Edge of Seventeen",
-                "artist": "Wuki",
-                "timeToStart": 1070
-            },
-            {
-                "id": 8,
-                "title": "Offshore",
-                "artist": "Kryder",
-                "timeToStart": 1070
-            },
-            {
-                "id": 9,
-                "title": "It Feels So Good (NIGHT/MOVES Remix)",
-                "artist": "Sonique",
-                "timeToStart": 1460
-            },
-            {
-                "id": 10,
-                "title": "Blue",
-                "artist": "David Guetta & Bebe Rexha",
-                "timeToStart": 1652
-            },
-            {
-                "id": 11,
-                "title": "Lionheart",
-                "artist": "Joel Corry & Tom Grennan",
-                "timeToStart": 1832
-            },
-            {
-                "id": 12,
-                "title": "Work it",
-                "artist": "Dance System ft. DJ Deeon",
-                "timeToStart": 1998
-            },
-            {
-                "id": 13,
-                "title": "Make You Sweat",
-                "artist": "Majestic",
-                "timeToStart": 2235
-            },
-            {
-                "id": 14,
-                "title": "Daddy Shhh",
-                "artist": "Crusy & Mark Knight",
-                "timeToStart": 2397
-            },
-            {
-                "id": 15,
-                "title": "Alors on Dance (Tribal Mix)",
-                "artist": "Stromae",
-                "timeToStart": 2507
-            },
-            {
-                "id": 16,
-                "title": "Work (Tribal Mix)",
-                "artist": "Pupa Nas T, Denise Belfon, Kevin McKay",
-                "timeToStart": 2671
-            },
-            {
-                "id": 17,
-                "title": "Session 53 (Exclusive Mashup",
-                "artist": "Shakira ft. Bizarrap",
-                "timeToStart": 2805
-            },
-            {
-                "id": 18,
-                "title": "Unholy (Tribal Mix)",
-                "artist": "Sam Smith ft. Kim Petras",
-                "timeToStart": 3058
-            },
-            {
-                "id": 19,
-                "title": "Star Walkin' (Tribal Mix)",
-                "artist": "Lil Nas X",
-                "timeToStart": 3261
-            }
-        ]
+        "user": {
+            "id": 1,
+            "name": "Fran",
+            "surname": "Encabo",
+            "birdthday": "1980-09-29",
+            "email": "franencabo@gmail.com",
+            "nickname": "franencabo",
+            "src": ""
+        }
     },
     {
-        "id": "4",
-        "title": "Dance 7",
-        "color": "brown",
-        "cover": "../../../covers/DANCE7.jpeg",
-        "duration": 3428,
-        "banner": "../../../banners/DANCE7-Banner.jpeg",
-        "src": "../../../music/DANCE7.mp3",
-        "description": "La mejor música del momento",
-        "tracks": [
+        "playlists": {
             {
-                "id": 1,
-                "title": "Satellite (Dance Mix)",
-                "artist": "Bebe Rexha & Snoop Dogg",
-                "timeToStart": 0
+                "id": "3",
+                "title": "Dance 6",
+                "color": "blue",
+                "cover": "../../../covers/DANCE6.jpeg",
+                "duration": 3520,
+                "banner": "../../../banners/DANCE6-Banner.jpeg",
+                "src": "../../../music/Dance6.mp3",
+                "description": "La mejor música del momento",
+                "tracks": [
+                    {
+                        "id": 1,
+                        "title": "What a feeling",
+                        "artist": "Block & Crown",
+                        "timeToStart": 0
+                    },
+                    {
+                        "id": 2,
+                        "title": "Call me",
+                        "artist": "Belters Only",
+                        "timeToStart": 200
+                    },
+                    {
+                        "id": 3,
+                        "title": "Long Train",
+                        "artist": "Bougenvilla ft. Chris Alain",
+                        "timeToStart": 397
+                    },
+                    {
+                        "id": 4,
+                        "title": "Cuff it",
+                        "artist": "Beyoncè",
+                        "timeToStart": 538
+                    },
+                    {
+                        "id": 5,
+                        "title": "Never gonna not dance again",
+                        "artist": "Pink",
+                        "timeToStart": 721
+                    },
+                    {
+                        "id": 6,
+                        "title": "Oh No You Didn't",
+                        "artist": "Hix & Kelli-Leigh",
+                        "timeToStart": 897
+                    },
+                    {
+                        "id": 7,
+                        "title": "Edge of Seventeen",
+                        "artist": "Wuki",
+                        "timeToStart": 1070
+                    },
+                    {
+                        "id": 8,
+                        "title": "Offshore",
+                        "artist": "Kryder",
+                        "timeToStart": 1070
+                    },
+                    {
+                        "id": 9,
+                        "title": "It Feels So Good (NIGHT/MOVES Remix)",
+                        "artist": "Sonique",
+                        "timeToStart": 1460
+                    },
+                    {
+                        "id": 10,
+                        "title": "Blue",
+                        "artist": "David Guetta & Bebe Rexha",
+                        "timeToStart": 1652
+                    },
+                    {
+                        "id": 11,
+                        "title": "Lionheart",
+                        "artist": "Joel Corry & Tom Grennan",
+                        "timeToStart": 1832
+                    },
+                    {
+                        "id": 12,
+                        "title": "Work it",
+                        "artist": "Dance System ft. DJ Deeon",
+                        "timeToStart": 1998
+                    },
+                    {
+                        "id": 13,
+                        "title": "Make You Sweat",
+                        "artist": "Majestic",
+                        "timeToStart": 2235
+                    },
+                    {
+                        "id": 14,
+                        "title": "Daddy Shhh",
+                        "artist": "Crusy & Mark Knight",
+                        "timeToStart": 2397
+                    },
+                    {
+                        "id": 15,
+                        "title": "Alors on Dance (Tribal Mix)",
+                        "artist": "Stromae",
+                        "timeToStart": 2507
+                    },
+                    {
+                        "id": 16,
+                        "title": "Work (Tribal Mix)",
+                        "artist": "Pupa Nas T, Denise Belfon, Kevin McKay",
+                        "timeToStart": 2671
+                    },
+                    {
+                        "id": 17,
+                        "title": "Session 53 (Exclusive Mashup",
+                        "artist": "Shakira ft. Bizarrap",
+                        "timeToStart": 2805
+                    },
+                    {
+                        "id": 18,
+                        "title": "Unholy (Tribal Mix)",
+                        "artist": "Sam Smith ft. Kim Petras",
+                        "timeToStart": 3058
+                    },
+                    {
+                        "id": 19,
+                        "title": "Star Walkin' (Tribal Mix)",
+                        "artist": "Lil Nas X",
+                        "timeToStart": 3261
+                    }
+                ]
             },
             {
-                "id": 2,
-                "title": "The music began to play",
-                "artist": "Mark Knight, Armand Van Helden",
-                "timeToStart": 230
+                "id": "4",
+                "title": "Dance 7",
+                "color": "brown",
+                "cover": "../../../covers/DANCE7.jpeg",
+                "duration": 3428,
+                "banner": "../../../banners/DANCE7-Banner.jpeg",
+                "src": "../../../music/DANCE7.mp3",
+                "description": "La mejor música del momento",
+                "tracks": [
+                    {
+                        "id": 1,
+                        "title": "Satellite (Dance Mix)",
+                        "artist": "Bebe Rexha & Snoop Dogg",
+                        "timeToStart": 0
+                    },
+                    {
+                        "id": 2,
+                        "title": "The music began to play",
+                        "artist": "Mark Knight, Armand Van Helden",
+                        "timeToStart": 230
+                    },
+                    {
+                        "id": 3,
+                        "title": "Nothing else matters",
+                        "artist": "Mista Jam",
+                        "timeToStart": 440
+                    },
+                    {
+                        "id": 4,
+                        "title": "Work with my love",
+                        "artist": "Alok & James Arthur",
+                        "timeToStart": 610
+                    },
+                    {
+                        "id": 5,
+                        "title": "Sweat 2022",
+                        "artist": "C&C Music Factory",
+                        "timeToStart": 820
+                    },
+                    {
+                        "id": 6,
+                        "title": "Enchanté",
+                        "artist": "Lewis Thompson ft. Clementine Douglas",
+                        "timeToStart": 870
+                    },
+                    {
+                        "id": 7,
+                        "title": "Do you know",
+                        "artist": "Just Kiddin",
+                        "timeToStart": 1014
+                    },
+                    {
+                        "id": 8,
+                        "title": "Street Stuff",
+                        "artist": "Majestic",
+                        "timeToStart": 1014
+                    },
+                    {
+                        "id": 9,
+                        "title": "Renegade Body",
+                        "artist": "Block & Crown, Lissat",
+                        "timeToStart": 1152
+                    },
+                    {
+                        "id": 10,
+                        "title": "Alo Alo",
+                        "artist": "Martin Solveig",
+                        "timeToStart": 1522
+                    },
+                    {
+                        "id": 11,
+                        "title": "Groove Tonight (Saxo Mix)",
+                        "artist": "Mr.Belt & Wezol",
+                        "timeToStart": 1673
+                    },
+                    {
+                        "id": 12,
+                        "title": "Insomnia 2023",
+                        "artist": "Faithless",
+                        "timeToStart": 1860
+                    },
+                    {
+                        "id": 13,
+                        "title": "Mr. Vain 2023",
+                        "artist": "Block & Crown",
+                        "timeToStart": 2106
+                    },
+                    {
+                        "id": 14,
+                        "title": "Feel this good (Jordie Harsh remix)",
+                        "artist": "Sigala",
+                        "timeToStart": 2260
+                    },
+                    {
+                        "id": 15,
+                        "title": "Be my lover (Future Rave Mix)",
+                        "artist": "La Bouche, David Guetta & Hypaton",
+                        "timeToStart": 2451
+                    },
+                    {
+                        "id": 16,
+                        "title": "Be my lover (Future Rave Mix)",
+                        "artist": "La Bouche, David Guetta & Hypaton",
+                        "timeToStart": 2451
+                    },
+                    {
+                        "id": 17,
+                        "title": "Phenomenal (Tribal Mix)",
+                        "artist": "Noa Kirel",
+                        "timeToStart": 2640
+                    },
+                    {
+                        "id": 18,
+                        "title": "Tattoo (Tribal Mix)",
+                        "artist": "Loreen",
+                        "timeToStart": 2852
+                    },
+                    {
+                        "id": 19,
+                        "title": "It's not right (Oye! Tribal Mix)",
+                        "artist": "Whitney Houston",
+                        "timeToStart": 3124
+                    }
+                ]
             },
             {
-                "id": 3,
-                "title": "Nothing else matters",
-                "artist": "Mista Jam",
-                "timeToStart": 440
-            },
-            {
-                "id": 4,
-                "title": "Work with my love",
-                "artist": "Alok & James Arthur",
-                "timeToStart": 610
-            },
-            {
-                "id": 5,
-                "title": "Sweat 2022",
-                "artist": "C&C Music Factory",
-                "timeToStart": 820
-            },
-            {
-                "id": 6,
-                "title": "Enchanté",
-                "artist": "Lewis Thompson ft. Clementine Douglas",
-                "timeToStart": 870
-            },
-            {
-                "id": 7,
-                "title": "Do you know",
-                "artist": "Just Kiddin",
-                "timeToStart": 1014
-            },
-            {
-                "id": 8,
-                "title": "Street Stuff",
-                "artist": "Majestic",
-                "timeToStart": 1014
-            },
-            {
-                "id": 9,
-                "title": "Renegade Body",
-                "artist": "Block & Crown, Lissat",
-                "timeToStart": 1152
-            },
-            {
-                "id": 10,
-                "title": "Alo Alo",
-                "artist": "Martin Solveig",
-                "timeToStart": 1522
-            },
-            {
-                "id": 11,
-                "title": "Groove Tonight (Saxo Mix)",
-                "artist": "Mr.Belt & Wezol",
-                "timeToStart": 1673
-            },
-            {
-                "id": 12,
-                "title": "Insomnia 2023",
-                "artist": "Faithless",
-                "timeToStart": 1860
-            },
-            {
-                "id": 13,
-                "title": "Mr. Vain 2023",
-                "artist": "Block & Crown",
-                "timeToStart": 2106
-            },
-            {
-                "id": 14,
-                "title": "Feel this good (Jordie Harsh remix)",
-                "artist": "Sigala",
-                "timeToStart": 2260
-            },
-            {
-                "id": 15,
-                "title": "Be my lover (Future Rave Mix)",
-                "artist": "La Bouche, David Guetta & Hypaton",
-                "timeToStart": 2451
-            },
-            {
-                "id": 16,
-                "title": "Be my lover (Future Rave Mix)",
-                "artist": "La Bouche, David Guetta & Hypaton",
-                "timeToStart": 2451
-            },
-            {
-                "id": 17,
-                "title": "Phenomenal (Tribal Mix)",
-                "artist": "Noa Kirel",
-                "timeToStart": 2640
-            },
-            {
-                "id": 18,
-                "title": "Tattoo (Tribal Mix)",
-                "artist": "Loreen",
-                "timeToStart": 2852
-            },
-            {
-                "id": 19,
-                "title": "It's not right (Oye! Tribal Mix)",
-                "artist": "Whitney Houston",
-                "timeToStart": 3124
+                "id": "6",
+                "title": "Rihanna Mix",
+                "color": "red",
+                "cover": "../../../covers/Rihanna-cover.jpeg",
+                "duration": 3406,
+                "banner": "../../../banners/Rihanna-Banner.jpeg",
+                "src": "../../../music/RihannaMix.mp3",
+                "description": "La mejor música del momento",
+                "tracks": [
+                    {
+                        "id": 1,
+                        "title": "Bitch Better Have My Money",
+                        "artist": "",
+                        "timeToStart": 0
+                    },
+                    {
+                        "id": 2,
+                        "title": "Wild Thoughts",
+                        "artist": "",
+                        "timeToStart": 153
+                    },
+                    {
+                        "id": 3,
+                        "title": "Umbrella",
+                        "artist": "",
+                        "timeToStart": 335
+                    },
+                    {
+                        "id": 4,
+                        "title": "S&M",
+                        "artist": "",
+                        "timeToStart": 532
+                    },
+                    {
+                        "id": 5,
+                        "title": "Pon de Replay",
+                        "artist": "",
+                        "timeToStart": 770
+                    },
+                    {
+                        "id": 6,
+                        "title": "Disturbia",
+                        "artist": "",
+                        "timeToStart": 967
+                    },
+                    {
+                        "id": 7,
+                        "title": "Don't stop the music",
+                        "artist": "",
+                        "timeToStart": 1248
+                    },
+                    {
+                        "id": 8,
+                        "title": "Where have you been",
+                        "artist": "",
+                        "timeToStart": 1474
+                    },
+                    {
+                        "id": 9,
+                        "title": "Only girl",
+                        "artist": "",
+                        "timeToStart": 1725
+                    },
+                    {
+                        "id": 10,
+                        "title": "Can't remember to forget you",
+                        "artist": "",
+                        "timeToStart": 2050
+                    },
+                    {
+                        "id": 11,
+                        "title": "Work",
+                        "artist": "",
+                        "timeToStart": 2284
+                    },
+                    {
+                        "id": 12,
+                        "title": "You Da One",
+                        "artist": "",
+                        "timeToStart": 2435
+                    },
+                    {
+                        "id": 13,
+                        "title": "Rude Boy",
+                        "artist": "",
+                        "timeToStart": 2628
+                    },
+                    {
+                        "id": 14,
+                        "title": "Kiss it better",
+                        "artist": "",
+                        "timeToStart": 2751
+                    },
+                    {
+                        "id": 15,
+                        "title": "We found love",
+                        "artist": "",
+                        "timeToStart": 2971
+                    },
+                    {
+                        "id": 16,
+                        "title": "Rigth now",
+                        "artist": "",
+                        "timeToStart": 3122
+                    }
+                ]
             }
-        ]
-    },
-    {
-        "id": "6",
-        "title": "Rihanna Mix",
-        "color": "red",
-        "cover": "../../../covers/Rihanna-cover.jpeg",
-        "duration": 3406,
-        "banner": "../../../banners/Rihanna-Banner.jpeg",
-        "src": "../../../music/RihannaMix.mp3",
-        "description": "La mejor música del momento",
-        "tracks": [
-            {
-                "id": 1,
-                "title": "Bitch Better Have My Money",
-                "artist": "",
-                "timeToStart": 0
-            },
-            {
-                "id": 2,
-                "title": "Wild Thoughts",
-                "artist": "",
-                "timeToStart": 153
-            },
-            {
-                "id": 3,
-                "title": "Umbrella",
-                "artist": "",
-                "timeToStart": 335
-            },
-            {
-                "id": 4,
-                "title": "S&M",
-                "artist": "",
-                "timeToStart": 532
-            },
-            {
-                "id": 5,
-                "title": "Pon de Replay",
-                "artist": "",
-                "timeToStart": 770
-            },
-            {
-                "id": 6,
-                "title": "Disturbia",
-                "artist": "",
-                "timeToStart": 967
-            },
-            {
-                "id": 7,
-                "title": "Don't stop the music",
-                "artist": "",
-                "timeToStart": 1248
-            },
-            {
-                "id": 8,
-                "title": "Where have you been",
-                "artist": "",
-                "timeToStart": 1474
-            },
-            {
-                "id": 9,
-                "title": "Only girl",
-                "artist": "",
-                "timeToStart": 1725
-            },
-            {
-                "id": 10,
-                "title": "Can't remember to forget you",
-                "artist": "",
-                "timeToStart": 2050
-            },
-            {
-                "id": 11,
-                "title": "Work",
-                "artist": "",
-                "timeToStart": 2284
-            },
-            {
-                "id": 12,
-                "title": "You Da One",
-                "artist": "",
-                "timeToStart": 2435
-            },
-            {
-                "id": 13,
-                "title": "Rude Boy",
-                "artist": "",
-                "timeToStart": 2628
-            },
-            {
-                "id": 14,
-                "title": "Kiss it better",
-                "artist": "",
-                "timeToStart": 2751
-            },
-            {
-                "id": 15,
-                "title": "We found love",
-                "artist": "",
-                "timeToStart": 2971
-            },
-            {
-                "id": 16,
-                "title": "Rigth now",
-                "artist": "",
-                "timeToStart": 3122
-            }
-        ]
+        }
     }
 ]

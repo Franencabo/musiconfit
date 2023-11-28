@@ -8,8 +8,6 @@ const AudioContext = React.createContext();
 export const AudioProvider = ({ children }) => {
     const audio = new Audio();
 
-
-
     return (
         <AudioContext.Provider value={audio}>
             {children}

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { AsideMenu, Player, Playlist } from "../components"
 import { useParams } from "react-router-dom";
 
+
 // eslint-disable-next-line react/prop-types
 export const PlaylistLayout = () => {
     const [playlistInfo, setPlaylistInfo] = useState({});
