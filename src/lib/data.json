@@ -11,7 +11,7 @@
         }
     },
     {
-        "playlists": {
+        "playlists": [
             {
                 "id": "3",
                 "title": "Dance 6",
@@ -372,6 +372,6 @@
                     }
                 ]
             }
-        }
+        ]
     }
 ]

@@ -4,6 +4,7 @@ import { Pause } from './icons/Pause';
 import { usePlayerStore } from '../store/playerStore';
 import { useAudio } from './AudioContext.jsx';
 import { VolumeControl } from './VolumeControl.jsx';
+import { CurrentSong } from './CurrentSong.jsx';
 
 
 export const Player = () => {
@@ -23,7 +24,7 @@ export const Player = () => {
 
     return (
         <footer className={`footer ${isPlaying ? 'enabled-player' : 'disabled-player'}`}>
-            <div>CurrentSong</div>
+            <CurrentSong />
             <div>
                 <button className="footer-button" disabled={!isPlaying} onClick={handleClick}>
                     {isPlaying ? <Pause className="player-icon" /> : <Play className="pause-icon" />}

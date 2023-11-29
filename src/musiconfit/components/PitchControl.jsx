@@ -9,7 +9,6 @@ export const PitchControl = () => {
 
     const [internalPlaybackRate, setInternalPlaybackRate] = useState(pitch);
 
-    console.log(internalPlaybackRate);
 
     const handleChangePitchChange = (value) => {
         setInternalPlaybackRate(value);
@@ -18,10 +17,11 @@ export const PitchControl = () => {
 
     useEffect(() => {
         audio.playbackRate = pitch;
-    }, [pitch])
+    }, [pitch, internalPlaybackRate])
 
     return (
         <div className="pitch-control">
+            <label htmlFor="">BPM</label>
             <input
                 className="pitch-slider"
                 type="range"
@@ -31,6 +31,9 @@ export const PitchControl = () => {
                 value={[pitch]}
                 onChange={(e) => handleChangePitchChange(e.target.value)}
             />
+
+            <span className="playbackRate min">- 30%</span>
+            <span className="playbackRate max">+ 30%</span>
 
             <div className="pitch-lines">
                 <div className='pitch-lines-relative'>
