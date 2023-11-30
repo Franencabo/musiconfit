@@ -124,11 +124,33 @@ html {
   border: none;
 }
 
+.current-song {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.current-song-img {
+  width: 80px;
+  height: auto;
+}
+
+.current-song-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: -12px;
+}
+
 .footer.enabled-player .footer-button {
   display: block;
   opacity: 1;
 }
-.footer.disabled-player .footer-button {
+
+.footer.enabled-player .footer-button {
+  opacity: 1;
+}
+
+.footer.disabled-player .footer-button,
+.footer.disabled-player .current-song {
   display: none;
   opacity: 0;
 }
@@ -559,18 +581,106 @@ pitch-lines-relative {
   font-weight: 600;
 }
 
-.current-song {
+.register-page {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
-}
-.current-song-img {
-  width: 80px;
-  height: auto;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
 }
 
-.current-song-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: -12px;
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.register-form label {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.register-form input {
+  height: 50px;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  padding: 0 12px;
+}
+
+.register-form input::placeholder {
+  color: rgba(250, 250, 250, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.nickname-info {
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.selects-birthdate {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.selects-birthdate label {
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.select select {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: rgba(250, 250, 250, 0.6);
+  border: 2px solid white;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  padding: 0 12px;
+}
+
+.day {
+  width: 15%;
+}
+
+.month {
+  width: 70%;
+}
+
+.year {
+  width: 25%;
+}
+
+.legal-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.terms,
+.privacy {
+  width: 80%;
+  color: rgba(250, 250, 250, 0.6);
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.register-form .register-btn {
+  width: 50%;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.register-page .login {
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.register-page .login a {
+  color: white;
 }

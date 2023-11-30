@@ -4,9 +4,8 @@ export const CurrentSong = () => {
 
     const { currentMusic } = usePlayerStore();
     const playlist = currentMusic.playlist;
-
     const song = currentMusic.song;
-    console.log(currentMusic.song)
+   
     return (
         <div>
             {song && (
