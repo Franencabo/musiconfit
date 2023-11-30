@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { usePlayerStore } from "../../musiconfit/store/playerStore.js";
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export const LoginPage = () => {
     const [email, setEmail] = useState('');
@@ -12,7 +12,7 @@ export const LoginPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (!email) return;
+        if (!email || !password) return;
         try {
             const response = await fetch(`http://localhost:1234/user/${email}`);
             const user = await response.json();
@@ -27,16 +27,18 @@ export const LoginPage = () => {
     }
 
     return (
-        <div className="register-page">
+        <div className="login-page">
             <div className="logo-row">
-                <picture className="logo-picture">
-                    <img className="logo-img" src="../../../public/assets/Musiconfit-logo.png" alt="" />
-                </picture>
-                <h1 className="logo-title">Musiconfit</h1>
+                <Link to={'/'}>
+                    <picture className="logo-picture">
+                        <img className="logo-img" src="../../../public/assets/Musiconfit-logo.png" alt="" />
+                    </picture>
+                    <h1 className="logo-title">Musiconfit</h1>
+                </Link>
             </div>
             <h2>Regístrate con tu correo electrónico</h2>
 
-            <form className="register-form" onSubmit={(e) => handleSubmit(e)}>
+            <form className="login-form" onSubmit={(e) => handleSubmit(e)}>
                 <label htmlFor="email">Correo electrónico</label>
                 <input
                     type="email"
@@ -63,8 +65,8 @@ export const LoginPage = () => {
             </form>
 
 
-            <div className="register">¿No tienes cuenta? <a href="">Regístrate en Musiconfit</a></div>
+            <div className="register">¿No tienes cuenta? <a href="/auth/register">Regístrate en Musiconfit</a></div>
 
-        </div>
+        </div >
     )
 }

@@ -490,15 +490,17 @@ pitch-lines-relative {
   top: 380px;
 }
 
-.logo-row {
+.logo-row a {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 16px;
+  text-decoration: none;
+  color: white;
 }
 
 .logo-title {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
   margin-left: 10px;
   text-transform: uppercase;
@@ -590,7 +592,8 @@ pitch-lines-relative {
   font-weight: 600;
 }
 
-.register-page {
+.register-page,
+.login-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -600,19 +603,22 @@ pitch-lines-relative {
   background-color: #000;
 }
 
-.register-form {
+.register-form,
+.login-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 30%;
 }
 
-.register-form label {
+.register-form label,
+.login-form label {
   width: 100%;
   margin-bottom: 12px;
 }
 
-.register-form input {
+.register-form input,
+.login-form input {
   height: 50px;
   background-color: black;
   color: rgba(250, 250, 250, 0.6);
@@ -622,7 +628,8 @@ pitch-lines-relative {
   padding: 0 12px;
 }
 
-.register-form input::placeholder {
+.register-form input::placeholder,
+.login-form input::placeholder {
   color: rgba(250, 250, 250, 0.6);
   font-size: 16px;
   font-weight: 400;
@@ -691,16 +698,26 @@ pitch-lines-relative {
   font-size: 12px;
 }
 
-.register-form .register-btn {
+.register-form .register-btn,
+.login-form .login-btn {
   width: 50%;
   align-self: center;
   margin-bottom: 40px;
 }
 
-.register-page .login {
+.login-form .login-btn {
+  font-size: 24px;
+  padding: 12px;
+  height: 54px;
+  margin-top: 20px;
+}
+
+.register-page .login,
+.login-page .register {
   color: rgba(250, 250, 250, 0.6);
 }
 
-.register-page .login a {
+.register-page .login a,
+.login-page .register a {
   color: white;
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { usePlayerStore } from "../../musiconfit/store/playerStore.js";
 
 export const RegisterPage = () => {
@@ -46,10 +46,12 @@ export const RegisterPage = () => {
     return (
         <div className="register-page">
             <div className="logo-row">
-                <picture className="logo-picture">
-                    <img className="logo-img" src="../../../public/assets/Musiconfit-logo.png" alt="" />
-                </picture>
-                <h1 className="logo-title">Musiconfit</h1>
+                <Link to={'/'}>
+                    <picture className="logo-picture">
+                        <img className="logo-img" src="../../../public/assets/Musiconfit-logo.png" alt="" />
+                    </picture>
+                    <h1 className="logo-title">Musiconfit</h1>
+                </Link>
             </div>
             <h2>Regístrate con tu correo electrónico</h2>
 
@@ -156,7 +158,7 @@ export const RegisterPage = () => {
             </form>
 
 
-            <div className="login">¿Ya tienes una cuenta? <a href="">Inicia sesión</a></div>
+            <div className="login">¿Ya tienes una cuenta? <a href="/auth/login">Inicia sesión</a></div>
 
         </div>
     )
