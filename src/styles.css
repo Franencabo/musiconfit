@@ -490,6 +490,7 @@ pitch-lines-relative {
   top: 380px;
 }
 
+.logo-row,
 .logo-row a {
   display: flex;
   justify-content: center;
