@@ -1,8 +1,14 @@
 import { useNavigate } from "react-router-dom"
 import { Previous } from './icons/Previous'
 import { Next } from './icons/Next'
+import { AuthButtons } from "./AuthButtons"
+import { usePlayerStore } from "../store/playerStore.js";
+import { LoggedButtons } from "./LoggedButtons.jsx";
 
 export const Header = () => {
+    const { user } = usePlayerStore(state => state);
+
+    const isLogged = user.isLogged;
 
     const navigate = useNavigate()
 
@@ -13,6 +19,8 @@ export const Header = () => {
     const onNavigateNext = () => {
         navigate(1)
     }
+
+
     return (
         <div className="header">
             <div className="header-nav">
@@ -25,10 +33,10 @@ export const Header = () => {
                     <Next className="next-icon" />
                 </button>
             </div>
-            <div className="header-actions">
-                <button className="login-btn">Iniciar sesión</button>
-                <button className="register-btn">Registrarte gratis</button>
+            <div>
+                {!isLogged && <AuthButtons />}
+                {isLogged && <LoggedButtons />}
             </div>
-        </div>
+        </div >
     )
 }

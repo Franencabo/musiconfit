@@ -1,6 +1,11 @@
 import { create } from "zustand";
 
 export const usePlayerStore = create((set) => ({
+  user: {
+    isLogged: false,
+    nickname: null,
+    birthdate: null,
+  },
   isPlaying: false,
   currentMusic: {
     playlist: null,
@@ -13,4 +18,5 @@ export const usePlayerStore = create((set) => ({
   setVolume: (volume) => set({ volume }),
   setIsPlaying: (isPlaying) => set({ isPlaying }),
   setCurrentMusic: (currentMusic) => set({ currentMusic }),
+  setUser: (user) => set({ user }),
 }));

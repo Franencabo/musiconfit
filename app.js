@@ -6,6 +6,7 @@ import { fileURLToPath } from "url";
 import { dirname } from "path";
 import { musicRouter } from "./server/routes/playlists.js";
 
+
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);

@@ -4,3 +4,23 @@ GET http://localhost:1234
 
 ### recuperar una playlist
 GET http://localhost:1234/playlist/6
+
+
+### recuperar usuarios
+GET http://localhost:1234/users
+
+
+
+### crear un usuario nuevo
+POST http://localhost:1234/users
+Content-Type: application/json
+
+{
+    "email": "franencabo@hotmail.com",
+    "password": "1234",
+    "nickname": "franencabo2",
+    "birthdate": "1990-01-01"
+}
+
+### recuperar usuario por email 
+GET http://localhost:1234/user/franencabo@hotmail.com

@@ -62,3 +62,36 @@ export class PlaylistsModel {
     return playlistData;
   }
 }
+
+export class UsersModel {
+  static async getAllUsers() {
+    const [rows] = await connection.execute("SELECT * FROM users");
+    return rows;
+  }
+
+  static async getUserByEmail({ email }) {
+    const [rows] = await connection.execute(
+      "SELECT * FROM users WHERE email = ?",
+      [email]
+    );
+
+    const user = rows.find((row) => row.email === email);
+    return user;
+  }
+
+  static async createUser({ email, password, nickname, birthdate }) {
+    try {
+      await connection.query(
+        "INSERT INTO users (email, password, nickname, birthdate) VALUES (?, ?, ?, ?)",
+        [email, password, nickname, birthdate]
+      );
+    } catch (e) {
+      throw new Error("Error creating user");
+    }
+    const [rows] = await connection.query(
+      "SELECT email, password, nickname, birthdate FROM users WHERE email = ?",
+      [email]
+    );
+    return rows;
+  }
+}
