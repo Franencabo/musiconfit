@@ -4,7 +4,7 @@ const DEFAULT_CONFIG = {
   host: "localhost",
   user: "root",
   port: 3306,
-  password: "",
+  password: "1234",
   database: "musiconfitdb",
 };
 
